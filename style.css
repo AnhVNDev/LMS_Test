@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  font-family: "Roboto";
+  height: 100%;
+}
+.container {
+  display: flex;
+}
+
+.nav-bar {
+  background: #191718;
+}
+.navbar-list {
+  height: 100%;
+}
+.navbar-list > div {
+  cursor: pointer;
+  padding: 14px 0 11px 16px;
+  border-bottom: 1px solid #191718;
+  min-height: 44px;
+  min-width: 150px;
+}
+.navbar-list > div:hover {
+  background: #5c5c5c;
+  color: #ffffff;
+}
+a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #aaaaaa;
+}
+
+.navbar-list > div:hover {
+  background: #5c5c5c;
+  color: #ffffff;
+}
+.navbar-list > div:hover > a {
+  color: #ffffff;
+}
+.active-link {
+  color: #ffffff;
+}
+.logo-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.first-content {
+  display: flex;
+  justify-content: center;
+}
+.first-content-wrap {
+  background: #efefef;
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 38px 50px;
+  width: 80%;
+}
+
+.first-content-wrap__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  margin-bottom: 18px;
+}
+
+.child-content-wrap {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  padding: 0 50px;
+  margin-bottom: 160px;
+}
+
+.child-content-wrap__item__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #000000;
+}
+.child-content-wrap__item__content {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.first-content-wrap__content {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+footer {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #3e3e3e;
+  padding: 30px 50px;
+  border: 1px solid #dedede;
+}
+p > img {
+  float: left;
+  margin-right: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+    .child-content-wrap{
+        flex-direction: column;
+    }
+    .logo-wrap>img{
+        width: 90%;
+        object-fit: contain;
+    }
+    .navbar-list > div{
+        min-width: 100px;
+    }
+}
